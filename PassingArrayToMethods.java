@@ -9,8 +9,10 @@ public class PassingArrayToMethods {
 
     }
 
-    static void change(int[] x) {
-        x[2] = 78;
+    static void change(int[] y) {
+        y[2] = 78;  // even if we make change in Y still it changes x
+        //in java this is called as pass by values i.e it passes only values not variable
+        // i.e u can access that values using any variable i.e ow x and y both are same arrays
 
     }
 }
