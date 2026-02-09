@@ -1,22 +1,21 @@
 package arraysnstruct;
-
-import java.util.Scanner;
-
+import java.util.Arrays; // write this to use Arrays.sort buil in feature
 public class sortarraybuiltin {
     static void main() {
-        Scanner sc = new Scanner(System.in);
-        int arr[] = new int[4]; // creats empty of size 4
-        System.out.println("Enter 4 elements in the array\n");
-        //i/p
-        //  OR
-        //int n = arr.length      ************ prefer this more
-        //for (int i = 0; i < n; i++) *************
-        for (int i = 0; i < 4; i++) {
-            arr[i] = sc.nextInt();
+        //sort acsending order
+        int[] arr = {6,23,56,-3,34};
+        print(arr);
+        Arrays.sort(arr);
+        System.out.println("\nSorted array using built-in sort");
+        print(arr);
+
+
+    }
+
+    public static void print(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
-        System.out.println("the array of no. is :");
-        for (int i = 0; i < 4; i++) {
-            System.out.print(arr[i]+" ");
-        }
+
     }
 }
