@@ -8,7 +8,7 @@ public class segreby2Pt {
         while (i<j){
             if(arr[i]==0) i++;
             if (arr[j]==1) j--;
-            if(i>=j) break; //imp write the conccept of this if condition
+            if(i>=j) break; //imp write the concept of this if condition
             if(arr[i]==1 && arr[j]==0) {
                 arr[i]=0;
                 arr[j]=1;
